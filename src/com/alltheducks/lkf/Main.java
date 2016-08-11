@@ -10,8 +10,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         String projectDir = ".";
+        // possibly scan an alternative directory
         if (args.length == 1) {
-            projectDir = args[1];
+            projectDir = args[0];
         }
         Path projectDirectory = Paths.get(projectDir);
 
